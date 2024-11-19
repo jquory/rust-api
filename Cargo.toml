@@ -1,0 +1,11 @@
+[package]
+name = "something-with-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sqlx = { version = "0.8.2", features = ["runtime-async-std-native-tls", "postgres"] }
+tokio = { version = "1.41.0", features = ["full"] }
+dotenv = "0.15.0"
+serde = "1.0.214"
+async-trait = "0.1.83"
